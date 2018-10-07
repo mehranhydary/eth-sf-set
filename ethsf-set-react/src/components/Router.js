@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import CreateMain from './create/CreateMain';
 import SellMain from './sell/SellMain';
 import BuyMain from './buy/BuyMain';
+import ZeroXMain from './zero-x/ZeroXMain';
 
 export default class Navigation extends Component {
 
@@ -23,6 +24,9 @@ export default class Navigation extends Component {
                     <Route
                     path="/sell" exact component={SellMain}
                     />
+                    <Route
+                    path="/x" exact component={ZeroXMain}
+                    />                    
                 </Switch>
             </BrowserRouter>
 

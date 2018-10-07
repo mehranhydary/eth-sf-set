@@ -15,8 +15,6 @@ const config = {
 const trueUSDAddress = '0xadb015d61f4beb2a712d237d9d4c5b75bafefd7b';
 const daiAddress = '0x1d82471142f0aeeec9fc375fc975629056c26cee';
 
-const componentAddresses = [trueUSDAddress, daiAddress];
-
 export default class SellMain extends Component {
     constructor(){
         super();
@@ -333,12 +331,13 @@ export default class SellMain extends Component {
                 </div>           
                 <div>
                 </div>          
-                <header>
+                {/* <header>
                     <h3 className="App-title">Transactions sent to the core Set Protocol Address</h3>
                     {/* this.renderEventsForAllSets() */}
-
+                {/*
                 </header>     
-                <div>
+                <div> */}
+                {/*
                     <Table striped bordered condensed hover responsive>
                         <thead>
                             <tr>
@@ -346,6 +345,7 @@ export default class SellMain extends Component {
                                 <th>blockNumber</th>
                                 <th>input</th>
                                 {/* You can't sell if you you've redeemed the ERC20 tokens */}
+                            {/*    
                             </tr>
                         </thead>
                         <tbody>
@@ -353,6 +353,7 @@ export default class SellMain extends Component {
                         </tbody>
                     </Table>
                 </div>
+                            */}
             </div>
         );
     }

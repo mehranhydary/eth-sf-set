@@ -7,6 +7,8 @@ module.exports = (sequelize, DataTypes) => {
     set_address: DataTypes.STRING,
     issue_hash: DataTypes.STRING,
     redeem_hash: DataTypes.STRING,
+    sold: DataTypes.BOOLEAN,
+    approved: DataTypes.BOOLEAN
   }, {});
   SetContract.associate = function(models) {
     // associations can be defined here

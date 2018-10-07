@@ -48,6 +48,8 @@ module.exports = {
           set_address: req.body.set_address || setcontract.set_address,
           issue_hash: req.body.issue_hash || setcontract.issue_hash,
           redeem_hash: req.body.redeem_hash || setcontract.redeem_hash,
+          sold: req.body.sold || setcontract.sold,
+          approved: req.body.approved || setcontract.approved
         })
         .then(() => res.status(200).send(setcontract))  // Send back the updated set contract.
         .catch((error) => res.status(400).send(error));
